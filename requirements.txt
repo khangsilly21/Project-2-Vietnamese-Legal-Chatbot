@@ -1,0 +1,8 @@
+datasets==3.5.0
+fastapi==0.115.12
+llama_index==0.12.33
+python-dotenv==1.1.0
+qdrant_client==1.14.2
+Requests==2.32.3
+llama-index-llms-gemini 
+llama-index-vector-stores-qdrant
