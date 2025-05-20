@@ -19,7 +19,7 @@ def get_llm():
         return Ollama(model="qwen2.5:0.5b", request_timeout=120.0)
     
 
-def get_embed_model(model_path="bkai-foundation-models/vietnamese-bi-encoder"):
+def get_embed_model(model_path="khanglt0004/ltk_embedding"):
     from llama_index.embeddings.huggingface import HuggingFaceEmbedding
     return HuggingFaceEmbedding(
         model_name=model_path
