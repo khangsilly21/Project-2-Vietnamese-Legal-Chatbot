@@ -32,7 +32,7 @@ def get_index(local = True, _embed_model = None):
     from llama_index.vector_stores.qdrant import QdrantVectorStore
     import qdrant_client
     qdrant_collection_name = "local_law_documents" if local else "law_db"
-    _embed_model = _embed_model if _embed_model else get_embed_model(model_path="bkai-foundation-models/vietnamese-bi-encoder")
+    _embed_model = _embed_model if _embed_model else get_embed_model()
     loaded_index = VectorStoreIndex.from_vector_store(
         QdrantVectorStore(
             client=qdrant_client.QdrantClient(
