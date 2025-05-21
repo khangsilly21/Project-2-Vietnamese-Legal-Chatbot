@@ -6,3 +6,4 @@ qdrant_client==1.14.2
 Requests==2.32.3
 llama-index-llms-gemini 
 llama-index-vector-stores-qdrant
+streamlit
