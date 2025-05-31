@@ -1,6 +1,6 @@
 # Vietnamese Legal Chatbot
 ## Overview
-![demo app](asset\demo.png)
+![demo app](asset/demo.png)
 
 [Watch video demo]([asset\video.mp4](https://www.facebook.com/khang.luu.56884))
 
