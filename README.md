@@ -1,8 +1,8 @@
 # Vietnamese Legal Chatbot
 ## Overview
-![demo app](asset\demo.png)
+![demo app](asset/demo.png)
 
-[Watch video demo]([asset\video.mp4](https://www.facebook.com/khang.luu.56884))
+[Watch video demo]([asset/video.mp4](https://www.facebook.com/khang.luu.56884))
 
 This project implements a Retrieval-Augmented Generation (RAG) pipeline, enabling users to ask about Vietnamese Law on Marriage and Family. The chatbot is powered by **Gemini**, or local models accessible through **Ollama**, retrieving relevant information and using **Large Language Models (LLMs)** to enhance responses based on user queries. 
 
@@ -15,7 +15,7 @@ This project implements a Retrieval-Augmented Generation (RAG) pipeline, enablin
 5. **Diverse legal database** - Laws, Decrees, Circulars, the Constitution, Regulations, and Guidelines on the Law on Marriage and Family.
 6. **Fine-tuned embeding model** - Use customized embedding model or for Marriage and Family Law field.
 7. **Acessibility** - Access by either web or messenger
-8. **Hybrid Search** - Combine **Semantic seach** and **Keyword search** to enhace retrieval
+8. **Hybrid Search** - Combine **Semantic seach** and **Keyword search** to enhance retrieval
 
 # Run the Application
 ## 1. Requirement
@@ -37,6 +37,6 @@ pip install -r requirement.txt
 ``` bash
 streamlit run streamlitapp.py
 ```
-> You can deploy rapidly on messenger by [ngrok](https://ngrok.com/) and code in `app`
+> You can deploy rapidly on messenger by [ngrok](https://ngrok.com/) and code in `app.py`
 
  

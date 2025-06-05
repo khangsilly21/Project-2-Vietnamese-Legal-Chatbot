@@ -6,7 +6,10 @@ import huggingface_hub
 huggingface_hub.login(token=os.environ["HUGGINGFACE_TOKEN"])
 
 
-def get_llm():
+def get_llm(local = False):
+    if local:
+        from llama_index.llms.ollama import Ollama
+        return Ollama(model="qwen2.5:0.5b", request_timeout=120.0)
     from llama_index.llms.google_genai import GoogleGenAI
     try:
         gemini_llm = GoogleGenAI(model="gemini-2.0-flash")

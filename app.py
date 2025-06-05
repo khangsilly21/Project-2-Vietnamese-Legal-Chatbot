@@ -63,10 +63,11 @@ async def receive_message(request: Request):
     return {"status": "ok"}
 
 def send_message(recipient_id, message_text):
+    clean_text = message_text.replace("*", "")
     url = "https://graph.facebook.com/v19.0/me/messages"
     payload = {
         "recipient": {"id": recipient_id},
-        "message": {"text": message_text},
+        "message": {"text": clean_text},
         "messaging_type": "RESPONSE"
     }
     params = {"access_token": PAGE_ACCESS_TOKEN}
