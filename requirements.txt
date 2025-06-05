@@ -7,3 +7,7 @@ Requests==2.32.3
 llama-index-llms-gemini 
 llama-index-vector-stores-qdrant
 streamlit
+llama-index-embeddings-huggingface
+fastembed
+fastapi[standard]
+llama-index-llms-google-genai
